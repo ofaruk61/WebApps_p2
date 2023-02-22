@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            font-size: 20px;
+        }
+
+        .blok-item-1 {
+            background-color: #C3ACD0;
+            flex-direction: column;
+            width: 100px;
+            height: 500px;
+        }
+
+        .satir-item-1 {
+            background-color: #F8CBA6;
+            flex-direction: row;
+            width: 500px;
+            height: 100px;
+        }
+
+        .satir-item-2 {
+            background-color: #EDDBC7;
+            flex-direction: row;
+            width: 400px;
+            height: 350px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .satir-item-3 {
+            background-color: #30E3DF;
+            flex-direction: row;
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            top: 400px;
+            left:100px;
+        }
+
+        .blok-item-2 {
+            background-color: #B99B6B;
+            flex-direction: column;
+            width: 100px;
+            height: 300px;
+            position: absolute;
+            top: 100px;
+            left: 500px;
+        }
+        .blok-item-1,.blok-item-2,.satir-item-1,.satir-item-2,.satir-item-3{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="blok-item-1">Nav</div>
+        <div class="satir-item-1">Header
+            <div class="satir-item-2">Article</div>
+            <div class="satir-item-3">Footer</div>
+            <div class="blok-item-2">Aside</div>
+        </div>
+    </div>
+</body>
+
+</html>
